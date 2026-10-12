@@ -54,6 +54,14 @@ Attachment E (Figure 3D) for Ethereum mainnet block 26112406: TSLAx/USDC 0.30%, 
 > and has not yet been used to re-read block 26112406 from live archive RPCs. Treat
 > re-verification under version 2.1 as pending until that run is published.
 
+## Comment scripts (Attachments B and G)
+
+Copied verbatim from the filed comment (File No. 4-927):
+
+- `ncf_model.py` (Attachment B): replication script for the figures and results tables. Needs numpy, scipy, matplotlib. Figure 3D reads `real_pool_state.csv` and `tick_liquidity_net.csv` from the folder it is run in, so copy the two files from `data/` next to the script first (`cp data/*.csv .`).
+- `ncf_addendum_figs.py` (Attachment B, second script): Figures A, B and C. Needs numpy, matplotlib.
+- `ncf_aggregate_check.py` (Attachment G): aggregate-volume and block-time check. Standard library only.
+
 ## Limits
 
 The offline tests check the script's logic, not live RPC behavior. The script covers
