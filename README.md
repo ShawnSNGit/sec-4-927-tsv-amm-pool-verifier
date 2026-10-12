@@ -43,9 +43,9 @@ Without `--block` the script reads the latest finalized block, which changes ove
 `--pools FILE` reads other pool addresses; `--discover` uses the DexScreener public search
 API only to propose candidate addresses.
 
-## Example data (`data/`)
+## Example data (repository root)
 
-`data/real_pool_state.csv` and `data/tick_liquidity_net.csv` are the pool data filed as
+`real_pool_state.csv` and `tick_liquidity_net.csv` are the pool data filed as
 Attachment E (Figure 3D) for Ethereum mainnet block 26112406: TSLAx/USDC 0.30%, MSTRx/USDC
 0.30% and MSTRx/USDC 1.00%.
 
@@ -58,7 +58,7 @@ Attachment E (Figure 3D) for Ethereum mainnet block 26112406: TSLAx/USDC 0.30%, 
 
 Copied verbatim from the filed comment (File No. 4-927):
 
-- `ncf_model.py` (Attachment B): replication script for the figures and results tables. Needs numpy, scipy, matplotlib. Figure 3D reads `real_pool_state.csv` and `tick_liquidity_net.csv` from the folder it is run in, so copy the two files from `data/` next to the script first (`cp data/*.csv .`).
+- `ncf_model.py` (Attachment B): replication script for the figures and results tables. Needs numpy, scipy, matplotlib. Figure 3D reads `real_pool_state.csv` and `tick_liquidity_net.csv` from the folder it is run in. They sit in the repository root next to the script, so it runs as is.
 - `ncf_addendum_figs.py` (Attachment B, second script): Figures A, B and C. Needs numpy, matplotlib.
 - `ncf_aggregate_check.py` (Attachment G): aggregate-volume and block-time check. Standard library only.
 
