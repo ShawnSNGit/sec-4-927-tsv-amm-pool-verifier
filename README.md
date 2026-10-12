@@ -62,6 +62,15 @@ Copied verbatim from the filed comment (File No. 4-927):
 - `ncf_addendum_figs.py` (Attachment B, second script): Figures A, B and C. Needs numpy, matplotlib.
 - `ncf_aggregate_check.py` (Attachment G): aggregate-volume and block-time check. Standard library only.
 
+Attachment F appendix scripts (Appendices C to F of the filed comment), also verbatim:
+
+- `sris_section9_reproduce.py` (Appendix C): reproduces the Section 9 worked example from the Attachment E pool state. Standard library only.
+- `sris_plug_and_play.py` (Appendix D): plug-and-play scoring of one rule; the inputs are placeholders, not estimates. Standard library only.
+- `sris_section92_arithmetic.py` (Appendix E): arithmetic for Section 9.2. Standard library only.
+- `sris_tests.py` (Appendix F): unit tests for Sections 4 and 5 (13 tests). Needs numpy.
+
+The filed comment names only `sris_section9_reproduce.py` and `sris_tests.py`; the other two file names are this repository's choice.
+
 ## Limits
 
 The offline tests check the script's logic, not live RPC behavior. The script covers
